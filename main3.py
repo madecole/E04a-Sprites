@@ -8,6 +8,8 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Sprites Example"
 
+import pyautogui()
+pyautogui.position()
 
 class MyGame(arcade.Window):
 
