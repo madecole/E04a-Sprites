@@ -8,8 +8,6 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Sprites Example"
 
-import pyautogui()
-pyautogui.position()
 
 class MyGame(arcade.Window):
 
@@ -39,7 +37,7 @@ class MyGame(arcade.Window):
 
 
     def on_mouse_motion(self, x, y, dx, dy):
-        pass
+        self.animal_sprite.on_mouse_motion(x, y, dx, dy)
 
 def main():
     """ Main method """
